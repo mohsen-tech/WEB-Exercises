@@ -1,0 +1,39 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product1.jpg",
+            "price": 110000
+        },
+        {
+            "id": 2,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product2.jpg",
+            "price": 120000
+        },
+        {
+            "id": 3,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product3.jpg",
+            "price": 130000
+        },
+        {
+            "id": 4,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product4.jpg",
+            "price": 140000
+        },
+        {
+            "id": 5,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product5.jpg",
+            "price": 150000
+        },
+        {
+            "id": 6,
+            "title": "صندلی مدرن",
+            "image": "images/product-img/product6.jpg",
+            "price": 160000
+        }
+    ]
+}

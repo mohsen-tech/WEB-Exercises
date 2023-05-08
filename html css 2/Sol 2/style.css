@@ -1,0 +1,30 @@
+.border {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border: 5px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    align-content: space-between;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.circle.red {
+    background: maroon;
+}
+
+.circle.teal {
+    background: teal;
+}
+
+.circle.orchid {
+    background: orchid;
+}

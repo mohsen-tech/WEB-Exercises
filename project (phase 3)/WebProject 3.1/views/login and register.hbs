@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 300px
+        }
+
+        input {
+            margin-bottom: 3px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #CCC
+        }
+
+        button {
+            padding: 10px
+        }
+
+        label {
+            cursor: pointer
+        }
+
+        #form-switch {
+            display: none
+        }
+
+        #register-form {
+            display: none
+        }
+
+        #form-switch:checked~#register-form {
+            display: block
+        }
+
+        #form-switch:checked~#login-form {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <input type='checkbox' id='form-switch'>
+    <form id='login-form' action="/login" method='post'>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type='submit'>Login</button>
+        <label for='form-switch'><span>Register</span></label>
+    </form>
+    <form id='register-form' action="/register" method='post'>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="repassword" placeholder="Re Password" required>
+        <button type='submit'>Register</button>
+        <label for='form-switch'>Already Member ? Sign In Now..</label>
+    </form>
+    {{#each errors}}
+    {{msg}}
+    {{/each}}
+
+    {{#if success_msg}}
+    {{success_msg}}
+    {{/if}}
+
+    {{#if error_msg}}
+    {{error_msg}}
+    {{/if}}
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+img {
+    width: 400;
+    height: 400;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+}
+
+#header {
+    background: #ccc;
+    padding: 20px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#navigation {
+    float: left;
+    width: 100%;
+    background: #333;
+}
+
+#navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li {
+    display: inline;
+}
+
+.nav {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+#content-container {
+    float: left;
+    width: 100%;
+    background: #FFF;
+}
+
+#content {
+    clear: left;
+    float: left;
+    width: 60%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+    display: inline;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+#side {
+    float: right;
+    width: 33%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+    display: inline;
+}
+
+#side h3 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        width: 100%;
+    }
+    #navigation {
+        margin: 10px;
+        width: 96%;
+    }
+    #content {
+        width: 100%;
+    }
+    #side {
+        float: left;
+    }
+}
+
+@media print {
+    #header {
+        background: #ccc;
+        padding: 20px;
+    }
+    #header h1 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 9px;
+    }
+    #navigation {
+        height: 0%;
+        width: 0%;
+        background: #333;
+    }
+    /*  */
+    #content-container {
+        float: left;
+        width: 100%;
+        background: #FFF;
+    }
+    #content {
+        clear: left;
+        float: left;
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 0 0 4%;
+        display: inline;
+    }
+    #content h2 {
+        margin: 0;
+    }
+    #side {
+        float: left;
+        width: 33%;
+        padding: 20px 0;
+        margin: 0 3% 0 0;
+        display: inline;
+    }
+    #side h3 {
+        margin: 0;
+    }
+}

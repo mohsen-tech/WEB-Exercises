@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "arial", "sans-serif";
+    background-image: radial-gradient(rgb(80, 80, 80), black);
+}
+
+#header {
+    background-color: white;
+    height: 115px;
+}
+
+#header img {
+    float: left;
+    margin: 0px 0px 5px 25px;
+}
+
+#header p {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 22px;
+}
+
+#navbar {
+    clear: both;
+    background-image: linear-gradient(white, #a6abaf, white);
+    height: 50px;
+    border-top: 1px solid black;
+}
+
+#navbar ul {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar ul li {
+    display: inline;
+    padding: 3px 10px;
+    border-right: 1px solid grey;
+}
+
+#navbar ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666666;
+}
+
+h2 {
+    background-image: linear-gradient(white, #ffbb00);
+    font-weight: 800;
+    color: black;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+}
+
+#building {
+    width: 350;
+    height: 240;
+    float: left;
+    margin: 15px 10px 5px 35px;
+}
+
+#about {
+    float: left;
+    width: 520px;
+    height: 240px;
+    background-image: linear-gradient(to right, grey, black);
+    color: white;
+    margin: 15px 0px 0px 0px;
+}
+
+#about h2 {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+#about p {
+    font-size: 12px;
+    line-height: 13px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#midline {
+    clear: both;
+}
+
+#midline img {
+    float: left;
+    margin: 1px 20px;
+}
+
+#midline p {
+    font-size: 10px;
+    color: #ffbb00;
+    padding: 5px 10px;
+}
+
+.box {
+    float: left;
+    width: 210px;
+    height: 240px;
+    border: 1px solid black;
+    margin: 10px 0px 10px 20px;
+    font-size: 10px;
+    background-image: linear-gradient(white, white, white, white, rgb(255, 255, 175));
+}
+
+.box p {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.box img {
+    width: 208;
+    height: 90;
+}
+
+.more {
+    margin-top: 15px;
+    position: relative;
+    background: yellow;
+    float: right;
+    border: 2px solid black;
+    margin-right: 23px;
+    padding: 0 20px 0 8px;
+    height: 24px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.more::after {
+    content: "";
+    display: block;
+    background: yellow;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 91%;
+    top: 2px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,30 @@
+.anim {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.ball-one {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 100%;
+    background: palevioletred;
+}
+
+.ball-two {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 100%;
+    background: steelblue;
+}
+
+.anim:active .ball-one {
+    background-color: red;
+    transform: translate(150px, 0);
+    transition: all 2s ease-in-out;
+}
