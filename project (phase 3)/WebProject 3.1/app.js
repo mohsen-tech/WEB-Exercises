@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const router = require('./routes.js');
 const passport = require('./passport');
 const app = express();
-mongoose.connect('mongodb+srv://mohsen_tech:mohsen0930@webprojectcluster.oipym.mongodb.net/watch?retryWrites=true&w=majority', {
+const dbConnectionUrl = ' ';
+
+mongoose.connect(dbConnectionUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('db connected!')).catch((err) => console.log(err));
